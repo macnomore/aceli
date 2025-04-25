@@ -46,6 +46,10 @@ public class IncentiveCalculatorConstants {
       (Double) constantValues.get('eSGGenderInclusiveBonus')
     );
     constantValuesMap.put(
+      'countryAdjustment',
+      (Double)constantValues.get('countryAdjustment')
+    );
+    constantValuesMap.put(
       'baseFactor',
       (Double) constantValues.get('baseFactor')
     );
