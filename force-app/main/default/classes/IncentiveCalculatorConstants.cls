@@ -2,7 +2,7 @@ public class IncentiveCalculatorConstants {
   public static String INCENTIVE_CALCULATOR_CONFIG = 'Incentive_Calculator_Config';
 
   public static Map<String, Double> loadConstants() {
-    Map<String, Double> constantValuesMap =new<String, Double>();
+    Map<String, Double> constantValuesMap = new Map<String,Double>();
     String constantValuesObject;
 
     for (Incentive_Config__mdt incentiveConfig : [
