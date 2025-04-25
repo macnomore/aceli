@@ -1,3 +1,7 @@
 trigger IncentivesCalculatorTrigger on Loan__c(before insert, before update) {
-  IncentiveCalculator.calculateIncentives(Trigger.new[0].Id);
+    if (Trigger.isBefore){
+        if (Trigger.isInsert || Trigger.isUpdate){
+            IncentiveCalculator.calculateIncentives(Trigger.new[0].Id);
+        }
+    }
 }
